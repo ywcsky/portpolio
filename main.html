@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seo! Portpolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hahmlet:wght@600&family=Jua&display=swap');
+
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jua', sans-serif;
+            border: none;
+        }
+
+        body {
+            background-color: white;
+            width: 100%;
+            /* height: 150rem; */
+        }
+
+        header {
+            width: 100%;
+            height: 8.8rem;
+            position: fixed;
+            background-color: transparent;
+            z-index: 99;
+        }
+
+        #nav_fixed {
+            background-color: #fff;
+            box-shadow: 0 1px 0.3rem hsla(0, 0%, 80%, .8);
+        }
+
+        #header_nav {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+
+        #nav_box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nav_list {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+        }
+
+        .nav_link {
+            font-size: 2.5rem;
+        }
+
+        /* 인트로 */
+        .intro {
+            width: 100%;
+            height: 35rem;
+            background-color: antiquewhite;
+            padding-top: 13rem;
+        }
+
+        .intro::before {
+            content: "";
+            background-image: url("intro_back.jpg");
+            background-size: cover;
+            opacity: 0.35;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 48rem;
+            z-index: 1;
+        }
+
+        .intro>div {
+            font-family: 'Hahmlet', serif;
+            position: relative;
+            z-index: 98;
+
+        }
+
+        /* aboutMe */
+        #info {
+            width: 100%;
+            height: 40rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        #about_me {
+            font-size: 6rem;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+
+        #about_me+hr {
+            height: 0.2rem;
+            background-color: black;
+        }
+
+        #info_wrap_box {
+            display: flex;
+            font-size: 2.5rem;
+            width: 80rem;
+            justify-content: space-between;
+        }
+
+        .info_wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info_wrap>div {
+            display: flex;
+            margin: 0.8rem;
+        }
+
+        .info_title {
+            font-size: 2.5rem;
+            width: 15rem;
+        }
+
+        .info_content {
+            font-family: 'Hahmlet', serif;
+            font-size: 2rem;
+        }
+
+        /* skills */
+        #skills {
+            width: 100%;
+            height: 80rem;
+            background-color: #b0daea;
+            display: flex;
+            padding-top: 5rem;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills_title {
+            font-size: 6rem;
+            font-family: 'Black Han Sans', sans-serif;
+            margin-bottom: 10rem;
+        }
+
+        .skills_title>hr {
+            height: 0.2rem;
+            background-color: black;
+        }
+
+        .skills_wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 100rem;
+
+        }
+
+        .skills_wrap>div {
+            width: 25rem;
+
+        }
+
+        .skill_title {
+            font-size: 3.5rem;
+            text-align: center;
+            width: 17rem;
+            margin: 0 auto;
+            background-color: #fff;
+            position: relative;
+            bottom: 2rem;
+            border-radius: 1rem;
+            border: 2px solid black;
+            box-shadow: 3px 2px 4px black;
+        }
+
+        .frontend {
+            width: 100%;
+            height: 45rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 2rem;
+            box-shadow: 3px 2px 4px black;
+        }
+
+        .frontend>img {
+            width: 15rem;
+        }
+
+        .backend {
+            width: 100%;
+            height: 55rem;
+            background-color: #fff;
+            display: flex;
+            border-radius: 2rem;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 3px 2px 4px black;
+
+        }
+
+        .backend>img {
+            width: 15rem;
+        }
+
+        .tools {
+            width: 100%;
+            height: 35rem;
+            background-color: #fff;
+            display: flex;
+            border-radius: 2rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 3px 2px 4px black;
+        }
+
+        .tools>img {
+            width: 15rem;
+        }
+        .skill_events:hover{
+            position: relative;
+            bottom: 1rem;
+            box-shadow: 0 0 25px black;
+            transition-duration: 0.5s;
+        }
+        
+        /* projects */
+        #projects{
+            width: 100%;
+            height: 100rem;
+        }
+
+
+        footer {
+            display: flex;
+            text-align: center;
+            font-size: 2rem;
+            height: 7rem;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header_nav">
+            <div id="nav_box">
+                <span class="nav_link">Seo! Portpolio</span>
+                <div id="nav_list">
+                    <span class="nav_link">Aubot me</span>
+                    <span class="nav_link">Skills</span>
+                    <span class="nav_link">Projects</span>
+                    <span class="nav_link">Career</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div
+            style="width: 48rem; margin: 0 auto;text-align: center; font-size: 5rem; font-weight: bold; margin-bottom: 5rem;">
+            - 서정민 -<br>포트폴리오</div>
+        <div style="text-align: center; font-size: 2.5rem;">
+            문제를 마주쳤을 때 피하지 않고 끈질기게 해결하고자 합니다.<br> 해결하여 발전하는 모습을 보여드리겠습니다.
+        </div>
+    </div>
+
+    <body>
+        <div id="info">
+            <div>
+                <div id="about_me">Aubot me</div>
+                <hr>
+            </div>
+            <div id="info_wrap_box">
+                <div class="info_wrap">
+                    <div>
+                        <div class="info_title">이름</div>
+                        <div class="info_content">서정민</div>
+                    </div>
+                    <div>
+                        <div class="info_title">생년월일</div>
+                        <div class="info_content">97. 11. 16</div>
+                    </div>
+                    <div>
+                        <div class="info_title">연락처</div>
+                        <div class="info_content">010-7725-7340</div>
+                    </div>
+                </div>
+                <div class="info_wrap">
+                    <div>
+                        <div class="info_title">이메일</div>
+                        <div class="info_content">ywcsky2@gmail.com</div>
+                    </div>
+                    <div>
+                        <div class="info_title">주소지</div>
+                        <div class="info_content">서울시 강북구</div>
+                    </div>
+                    <div>
+                        <div class="info_title">학력</div>
+                        <div class="info_content">한양공업고등학교<br>(컴퓨터네트워크과)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+            <div class="skills_title">Skills
+                <hr>
+            </div>
+            <div class="skills_wrap">
+                <div>
+                    <div class="frontend skill_events">
+                        <div class="skill_title">Frontend</div>
+                        <img src="img/htmlcssjs.png">
+                        <img src="img/JQuery-Logo.svg">
+                        <img src="img/jsp.png" style="width: 10rem;">
+                        <img src="img/mustache.png">
+                        <img src="img/thymeleaf.png">
+                    </div>
+                </div>
+                <div>
+                    <div class="backend skill_events">
+                        <div class="skill_title">Backend</div>
+                        <img src="img/springboot.png">
+                        <img src="img/springscurity.png">
+                        <img src="img/mybatis.png">
+                        <img src="img/oracle.png">
+                        <img src="img/tomcat.png">
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <div class="tools skill_events">
+                        <div class="skill_title">Tools</div>
+                        <img src="img/intellij_idea_logo.png">
+                        <img src="img/eclipse.png">
+                        <img src="img/vscode.jpg" style="width: 10rem;">
+                        <img src="img/github.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div>
+                <img src="">
+            </div>
+        </div>
+        <footer>
+            Copyright 2023. Seo all rights reserved. <br>
+            상업용도가 아닌 포트폴리오 용도로 제작되었습니다.
+        </footer>
+    </body>
+    <script>
+        document.addEventListener('scroll', function () {
+            if (window.scrollY > 1) {
+                document.querySelector('header').setAttribute("id", "nav_fixed");
+            } else {
+                document.querySelector('header').setAttribute("id", "");
+            }
+        });
+        
+
+
+
+    </script>
+</body>
+
+</html>
