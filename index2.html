@@ -6,6 +6,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Seo! Portpolio</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div style="display: flex;">
+        <div class="side">
+            <div class="side_name">
+                <img src="img/intro_back.jpg">
+                <p>서정민</p>
+            </div>
+            <nav>
+                <ul>
+                    <li id="aboutMeLi">About Me</li>
+                    <li id="skillsLi">Skills</li>
+                    <li id="projectsLi">Projects</li>
+                    <li id="careerLi">Career</li>
+                </ul>
+            </nav>
+            <footer>
+                Made By Seo! Portpolio
+            </footer>
+        </div>
+        <div style="width: 168rem; height: 1000rem;padding-left: 30rem;">
+            <div class="intro">
+                <div class="intro_title">
+                    - 서정민 -<br>포트폴리오</div>
+                <div class="intro_content">
+                    문제를 마주쳤을 때 피하지 않고 끈질기게 해결하고자 합니다.<br> 해결하여 발전하는 모습을 보여드리겠습니다.
+                </div>
+            </div>
+            <div id="info">
+                <div>
+                    <div id="about_me">About me</div>
+                    <hr>
+                </div>
+                <div id="info_wrap_box">
+                    <div class="info_wrap">
+                        <div>
+                            <div class="info_title">이름</div>
+                            <div class="info_content">서정민</div>
+                        </div>
+                        <div>
+                            <div class="info_title">생년월일</div>
+                            <div class="info_content">97. 11. 16</div>
+                        </div>
+                        <div>
+                            <div class="info_title">연락처</div>
+                            <div class="info_content">010-7725-7340</div>
+                        </div>
+                    </div>
+                    <div class="info_wrap">
+                        <div>
+                            <div class="info_title">이메일</div>
+                            <div class="info_content">ywcsky2@gmail.com</div>
+                        </div>
+                        <div>
+                            <div class="info_title">주소지</div>
+                            <div class="info_content">서울시 강북구</div>
+                        </div>
+                        <div>
+                            <div class="info_title">학력</div>
+                            <div class="info_content">한양공업고등학교<br>(컴퓨터네트워크과)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <div class="skills_title">Skills
+                    <hr>
+                </div>
+                <div class="skills_wrap">
+                    <div>
+                        <div class="frontend skill_events">
+                            <div class="skill_title">Frontend</div>
+                            <img src="img/htmlcssjs.png">
+                            <img src="img/JQuery-Logo.svg">
+                            <img src="img/mustache.png">
+                            <img src="img/thymeleaf.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="backend skill_events">
+                            <div class="skill_title">Backend</div>
+                            <img src="img/springboot.png">
+                            <img src="img/springscurity.png">
+                            <img src="img/mybatis.png">
+                            <img src="img/oracle.png">
+                            <img src="img/tomcat.png">
+                            <img src="img/jsp.png" style="width: 10rem;">
+                        </div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div class="tools skill_events">
+                            <div class="skill_title">Tools</div>
+                            <img src="img/intellij_idea_logo.png">
+                            <img src="img/eclipse.png">
+                            <img src="img/vscode.jpg" style="width: 10rem;">
+                            <img src="img/github.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <div style="width:100vh; height: 60vh; background-color: white;" class="projects_content">
+                    <div class="project_title">망고뮤직</div>
+                    <div class="project_title_sub">(KH정보교육원 세미 프로젝트)</div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="project_info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="topBtn">
+        </div>
+        <script>
+            document.querySelector('#aboutMeLi').addEventListener('click', function () {
+                var height = document.querySelector('#info').offsetTop;
+                window.scrollTo({ top: height });
+            });
+
+            document.querySelector('#skillsLi').addEventListener('click', function () {
+                var height = document.querySelector('#skills').offsetTop;
+                window.scrollTo({ top: height });
+            })
+
+            document.querySelector('#topBtn').addEventListener('click', function () {
+                window.scrollTo({ top: location });
+            })
+
+
+
+            new Swiper('.swiper', {
+                autoplay: {
+                    delay: 5000
+                },
+                loop: true,
+                autoplay: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next'
+                }
+            })
+        </script>
+
+</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seo! Portpolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hahmlet:wght@600&family=Jua&display=swap');
 
