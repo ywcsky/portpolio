@@ -433,7 +433,8 @@ nav li:hover {
     font-size: 5rem;
     padding-right: 0.5rem;
 }
-.job_info{
+
+.job_info {
     display: flex;
     margin: 0 0 2vh 0;
 }
@@ -442,10 +443,12 @@ nav li:hover {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 2rem;
 }
-.job_info_title{
+
+.job_info_title {
     width: 7vw;
 }
-.job_info_content{
+
+.job_info_content {
     width: 12vw;
 }
 
@@ -469,7 +472,7 @@ footer {
     cursor: pointer;
 }
 
-.line{
+.line {
     height: 10vh;
     border: 2px dashed #ccc;
     margin: 5vh;
