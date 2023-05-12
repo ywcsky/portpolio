@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Seo! Portpolio</title>
-    <link rel="stylesheet" href="index2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="index2.css">
 </head>
 
 <body>
     <div style="display: flex;">
         <div class="side">
             <div class="side_name">
-                <img src="img/intro_back.jpg">
+                <img src="img/KakaoTalk_20230512_225828171.jpg">
                 <p>서정민</p>
             </div>
             <nav>
@@ -23,14 +23,14 @@
                     <li id="aboutMeLi">About Me</li>
                     <li id="skillsLi">Skills</li>
                     <li id="projectsLi">Projects</li>
-                    <li id="careerLi">Career</li>
+                    <li id="careerLi">Career & Adu</li>
                 </ul>
             </nav>
             <footer>
                 Made By Seo! Portpolio
             </footer>
         </div>
-        <div style="width: 168rem; height: 1000rem;padding-left: 30rem;">
+        <div style="width: 85vw; padding-left: 15vw;">
             <div class="intro">
                 <div class="intro_title">
                     - 서정민 -<br>포트폴리오</div>
@@ -40,8 +40,9 @@
             </div>
             <div id="info">
                 <div>
-                    <div id="about_me">About me</div>
-                    <hr>
+                    <div class="titles">About me
+                        <hr>
+                    </div>
                 </div>
                 <div id="info_wrap_box">
                     <div class="info_wrap">
@@ -75,7 +76,7 @@
                 </div>
             </div>
             <div id="skills">
-                <div class="skills_title">Skills
+                <div class="titles">Skills
                     <hr>
                 </div>
                 <div class="skills_wrap">
@@ -111,480 +112,158 @@
                     </div>
                 </div>
             </div>
-            <div id="projects">
-                <div style="width:100vh; height: 60vh; background-color: white;" class="projects_content">
+            <div class="projects">
+                <div class="titles">Projects
+                    <hr>
+                </div>
+                <div class="projects_content">
                     <div class="project_title">망고뮤직</div>
-                    <div class="project_title_sub">(KH정보교육원 세미 프로젝트)</div>
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
+                    <div class="project_title_sub">(KH정보교육원 세미 4인 프로젝트)</div>
+                    <div style="display: flex;">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project_1_img"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project_2_img"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project_3_img"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="project_info">
 
+                    <div id="project_info_box">
+                        <div class="project_info">
+                            <b>뮤직 플레이어와 거래소를 합친 플랫폼입니다.</b> <br>외국 뮤직 스트리밍 사이트인 스포티파이와 저작권 거래사이트인 뮤직카우에 영감을 받아 세미 프로젝트로
+                            제작하였습니다.<br><span class="font_blue">DB</span>를 설계하고 고쳐가며 어떻게 하면 효율적으로 데이터를 저장할지에 관해 공부하게
+                            되었고,
+                            <span class="font_blue">Ajax</span>를 학습하며 어렵게만 느껴졌던 <span class="font_blue">JSON</span>과 같은
+                            데이터
+                            처리에 대해도 알아 갔습니다.
+                        </div>
+                        <div class="project_skills">
+                            <div class="project_skills_wrap">
+                                <div class="projects_label">구현 기능</div>
+                                <div class="projects_value"><span class="font_blue">Ajax</span>를 사용한 프로필 사진 업로드 및 채팅 기능,
+                                    유저
+                                    마이페이지, 파일업로드 기능을 가진 게시판, 음악 구매 및 다운로드</div>
+                            </div>
+                            <div class="project_skills_wrap">
+                                <div class="projects_label">담당역할</div>
+                                <div class="projects_value">프로젝트 환경설정, DB설계</div>
+                            </div>
+                            <div class="project_skills_wrap">
+                                <div class="projects_label">DataBase</div>
+                                <div class="projects_value">Oracle 11g</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects_content">
+                    <div class="project_title">BARIBARI</div>
+                    <div class="project_title_sub">(KH정보교육원 파이널 6인 프로젝트)</div>
+                    <div style="display: flex;">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project_4_img"><video autoplay muted loop
+                                            style="width: 100%; height: 100%;">
+                                            <source src="projects/baribari_video.mp4" type="video/mp4">
+                                        </video></div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div id="project_info_box">
+                        <div class="project_info">
+                            <b>캠핑쇼핑몰과 커뮤니티를 합친 플랫폼입니다.</b> <br>가장 기본적인 웹사이트인 쇼핑몰과 커뮤니티를 같이 구현하였습니다.<br>
+                            <span class="font_blue">Spring Scurity</span>를 활용하여 로그인 및 회원가입을 구현하였고,
+                            <span class="font_blue">BootStrap</span> 및 <span class="font_blue">DataTable</span>을 활용하여
+                            프론트 구현 시간을 줄였습니다.
+                        </div>
+                        <div class="project_skills">
+                            <div class="project_skills_wrap">
+                                <div class="projects_label">구현 기능</div>
+                                <div class="projects_value"><span class="font_blue">SpringScurity</span>를 사용한 로그인 및
+                                    회원가입, 마이페이지, 관리자 페이지, 쪽지 / 필요기능에 Ajax를 같이 사용하였습니다.</div>
+                            </div>
+                            <div class="project_skills_wrap">
+                                <div class="projects_label">담당역할</div>
+                                <div class="projects_value">프로젝트 환경설정, DB설계</div>
+                            </div>
+                            <div class="project_skills_wrap">
+                                <div class="projects_label">DataBase</div>
+                                <div class="projects_value">Oracle 11g</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Careers">
+                <div class="titles">Career & Adu
+                    <hr>
+                </div>
+                <div class="job_box">
+                    <div class="job_title">
+                        <div class="compony_title">(주)보현기업</div>
+                    </div>
+                    <div class="job_wrap">
+                        <div class="job_info">
+                            <div class="job_info_title">담당 업무</div>
+                            <div class="job_info_content">삼성중공업 1차 협력사 자재관리</div>
+                        </div>
+                        <div class="job_info">
+                            <div class="job_info_title">근무 기간</div>
+                            <div class="job_info_content">2016.01 ~ 2016.10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="job_box">
+                    <div class="job_title">
+                        <div class="compony_title">(주)투바</div>
+                    </div>
+                    <div class="job_wrap">
+                        <div class="job_info">
+                            <div class="job_info_title">담당 업무</div>
+                            <div class="job_info_content">애플 서비스센터 <br>iOS, Mac 수리 및 상담</div>
+                        </div>
+                        <div class="job_info">
+                            <div class="job_info_title">근무 기간</div>
+                            <div class="job_info_content">2019.02 ~ 2022.08</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="job_box">
+                    <div class="job_title">
+                        <div class="compony_title">KH정보교육원</div>
+                    </div>
+                    <div class="job_wrap">
+                        <div class="job_info">
+                            <div class="job_info_title">교육명</div>
+                            <div class="job_info_content">Springframework & 클라우드 융합 웹 개발자 양성과정</div>
+                        </div>
+                        <div class="job_info">
+                            <div class="job_info_title">교육 기간</div>
+                            <div class="job_info_content">2022.11 ~ 2023.05</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="topBtn">
         </div>
-        <script>
-            document.querySelector('#aboutMeLi').addEventListener('click', function () {
-                var height = document.querySelector('#info').offsetTop;
-                window.scrollTo({ top: height });
-            });
 
-            document.querySelector('#skillsLi').addEventListener('click', function () {
-                var height = document.querySelector('#skills').offsetTop;
-                window.scrollTo({ top: height });
-            })
+        <script src="index2.js"></script>
 
-            document.querySelector('#topBtn').addEventListener('click', function () {
-                window.scrollTo({ top: location });
-            })
-
-
-
-            new Swiper('.swiper', {
-                autoplay: {
-                    delay: 5000
-                },
-                loop: true,
-                autoplay: true,
-                slidesPerView: 1,
-                spaceBetween: 10,
-                centeredSlides: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                navigation: {
-                    prevEl: '.swiper-button-prev',
-                    nextEl: '.swiper-button-next'
-                }
-            })
-        </script>
-
-</body>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seo! Portpolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hahmlet:wght@600&family=Jua&display=swap');
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 62.5%;
-            list-style: none;
-            font-family: 'Jua', sans-serif;
-
-        }
-
-        .side {
-            border-right: 1px solid #ccc;
-            width: 30rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 94rem;
-            position: fixed;
-        }
-
-        .side_name {
-            padding: 5rem 0 0 0;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .side_name>img {
-            width: 20rem;
-            height: 20rem;
-            border-radius: 50%;
-        }
-
-        .side_name p {
-            font-size: 4rem;
-            margin-top: 1.5rem;
-            font-family: 'Hahmlet', serif;
-
-        }
-
-        nav {
-            width: 100%;
-            height: 40rem;
-        }
-
-        nav ul {
-            display: flex;
-            flex-direction: column;
-        }
-
-        nav li {
-            font-family: 'Black Han Sans', sans-serif;
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            padding-left: 1.5rem;
-
-        }
-
-        nav li:hover {
-            cursor: pointer;
-            border: 1px solid #b0daea;
-            background-color: #b0daea;
-
-        }
-
-        /* 인트로 */
-        .intro {
-            width: 100%;
-            height: 35rem;
-            background-color: antiquewhite;
-            padding-top: 13rem;
-        }
-
-        .intro::before {
-            content: "";
-            background-image: url("img/intro_back.jpg");
-            background-size: cover;
-            opacity: 0.35;
-            position: absolute;
-            top: 0px;
-            left: 30rem;
-            right: 0px;
-            bottom: 0px;
-            height: 48rem;
-            width: 160.3rem;
-            z-index: 1;
-        }
-
-        .intro>div {
-            font-family: 'Hahmlet', serif;
-            position: relative;
-            z-index: 2;
-        }
-
-        .intro_title {
-            width: 48rem;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 5rem;
-            font-weight: bold;
-            margin-bottom: 5rem;
-        }
-
-        .intro_content {
-            text-align: center;
-            font-size: 2.5rem;
-        }
-
-        /* aboutMe */
-        #info {
-            width: 100%;
-            height: 40rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: column;
-        }
-
-        #about_me {
-            font-size: 6rem;
-            font-family: 'Black Han Sans', sans-serif;
-        }
-
-        #about_me+hr {
-            height: 0.2rem;
-            background-color: black;
-        }
-
-        #info_wrap_box {
-            display: flex;
-            font-size: 2.5rem;
-            width: 80rem;
-            justify-content: space-between;
-        }
-
-        .info_wrap {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .info_wrap>div {
-            display: flex;
-            margin: 0.8rem;
-        }
-
-        .info_title {
-            font-size: 2.5rem;
-            width: 15rem;
-        }
-
-        .info_content {
-            font-family: 'Hahmlet', serif;
-            font-size: 2rem;
-        }
-
-        /* skills */
-        #skills {
-            width: 100%;
-            height: 80rem;
-            background-color: #b0daea;
-            display: flex;
-            padding-top: 5rem;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .skills_title {
-            font-size: 6rem;
-            margin-bottom: 10rem;
-        }
-
-        .skills_title>hr {
-            height: 0.2rem;
-            background-color: black;
-        }
-
-        .skills_wrap {
-            display: flex;
-            justify-content: space-around;
-            width: 100rem;
-
-        }
-
-        .skills_wrap>div {
-            width: 25rem;
-
-        }
-
-        .skill_title {
-            font-size: 3.5rem;
-            text-align: center;
-            width: 17rem;
-            margin: 0 auto;
-            background-color: #fff;
-            position: relative;
-            bottom: 2rem;
-            border-radius: 1rem;
-            border: 2px solid black;
-            box-shadow: 3px 2px 4px black;
-        }
-
-        .frontend {
-            width: 100%;
-            height: 45rem;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 2rem;
-            box-shadow: 3px 2px 4px black;
-        }
-
-        .frontend>img {
-            width: 15rem;
-        }
-
-        .backend {
-            width: 100%;
-            height: 55rem;
-            background-color: #fff;
-            display: flex;
-            border-radius: 2rem;
-            align-items: center;
-            flex-direction: column;
-            box-shadow: 3px 2px 4px black;
-
-        }
-
-        .backend>img {
-            width: 15rem;
-        }
-
-        .tools {
-            width: 100%;
-            height: 35rem;
-            background-color: #fff;
-            display: flex;
-            border-radius: 2rem;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-around;
-            box-shadow: 3px 2px 4px black;
-        }
-
-        .tools>img {
-            width: 15rem;
-        }
-
-        .skill_events:hover {
-            position: relative;
-            bottom: 1rem;
-            box-shadow: 0 0 25px black;
-            transition-duration: 0.5s;
-        }
-
-        footer {
-            height: 10rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: antiquewhite;
-            font-size: 2.3rem;
-        }
-
-        #topBtn {
-            width: 10rem;
-            height: 10rem;
-            position: fixed;
-            top: 80rem;
-            right: 5rem;
-            background-image: url('img/arrowUp.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-    <div style="display: flex;">
-        <div class="side">
-            <div class="side_name">
-                <img src="img/intro_back.jpg">
-                <p>서정민</p>
-            </div>
-            <nav>
-                <ul>
-                    <li id="aboutMeLi">About Me</li>
-                    <li id="skillsLi">Skills</li>
-                    <li id="projectsLi">Projects</li>
-                    <li id="careerLi">Career</li>
-                </ul>
-            </nav>
-            <footer>
-                Made By Seo! Portpolio
-            </footer>
-        </div>
-        <div style="width: 168rem; height: 1000rem;padding-left: 30rem;">
-            <div class="intro">
-                <div class="intro_title">
-                    - 서정민 -<br>포트폴리오</div>
-                <div class="intro_content">
-                    문제를 마주쳤을 때 피하지 않고 끈질기게 해결하고자 합니다.<br> 해결하여 발전하는 모습을 보여드리겠습니다.
-                </div>
-            </div>
-            <div id="info">
-                <div>
-                    <div id="about_me">About me</div>
-                    <hr>
-                </div>
-                <div id="info_wrap_box">
-                    <div class="info_wrap">
-                        <div>
-                            <div class="info_title">이름</div>
-                            <div class="info_content">서정민</div>
-                        </div>
-                        <div>
-                            <div class="info_title">생년월일</div>
-                            <div class="info_content">97. 11. 16</div>
-                        </div>
-                        <div>
-                            <div class="info_title">연락처</div>
-                            <div class="info_content">010-7725-7340</div>
-                        </div>
-                    </div>
-                    <div class="info_wrap">
-                        <div>
-                            <div class="info_title">이메일</div>
-                            <div class="info_content">ywcsky2@gmail.com</div>
-                        </div>
-                        <div>
-                            <div class="info_title">주소지</div>
-                            <div class="info_content">서울시 강북구</div>
-                        </div>
-                        <div>
-                            <div class="info_title">학력</div>
-                            <div class="info_content">한양공업고등학교<br>(컴퓨터네트워크과)</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="skills">
-                <div class="skills_title">Skills
-                    <hr>
-                </div>
-                <div class="skills_wrap">
-                    <div>
-                        <div class="frontend skill_events">
-                            <div class="skill_title">Frontend</div>
-                            <img src="img/htmlcssjs.png">
-                            <img src="img/JQuery-Logo.svg">
-                            <img src="img/jsp.png" style="width: 10rem;">
-                            <img src="img/mustache.png">
-                            <img src="img/thymeleaf.png">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="backend skill_events">
-                            <div class="skill_title">Backend</div>
-                            <img src="img/springboot.png">
-                            <img src="img/springscurity.png">
-                            <img src="img/mybatis.png">
-                            <img src="img/oracle.png">
-                            <img src="img/tomcat.png">
-                        </div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div class="tools skill_events">
-                            <div class="skill_title">Tools</div>
-                            <img src="img/intellij_idea_logo.png">
-                            <img src="img/eclipse.png">
-                            <img src="img/vscode.jpg" style="width: 10rem;">
-                            <img src="img/github.jpeg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="projects">
-            </div>
-        </div>
-    </div>
-    <div id="topBtn">
-    </div>
-    <script>
-        document.querySelector('#aboutMeLi').addEventListener('click', function () {
-            var height = document.querySelector('#info').offsetTop;
-            window.scrollTo({ top: height });
-        });
-
-        document.querySelector('#skillsLi').addEventListener('click', function () {
-            var height = document.querySelector('#skills').offsetTop;
-            window.scrollTo({ top: height });
-        })
-
-        document.querySelector('#topBtn').addEventListener('click',function(){
-            window.scrollTo({top:location});
-        })
-    </script>
 </body>
 
 </html>
