@@ -8,18 +8,20 @@
     <title>Seo! Portpolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header>
         <div id="header_nav">
             <div id="nav_box">
-                <span class="nav_link">Seo! Portpolio</span>
+                <span class="nav_link" onclick="location.href=location.href">Seo! Portpolio</span>
                 <div id="nav_list">
                     <span class="nav_link" onclick="scrollToAubotMe();">About me</span>
-                    <span class="nav_link">Skills</span>
-                    <span class="nav_link">Projects</span>
-                    <span class="nav_link">Career</span>
+                    <span class="nav_link" onclick="scrollToSkills();">Skills</span>
+                    <span class="nav_link" onclick="scrollToProjects();">Projects</span>
+                    <span class="nav_link" onclick="scrollToCareer();">Career</span>
                 </div>
             </div>
         </div>
@@ -95,7 +97,6 @@
                         <img src="img/oracle.png">
                         <img src="img/tomcat.png">
                     </div>
-                    <div></div>
                 </div>
                 <div>
                     <div class="tools skill_events">
@@ -109,8 +110,31 @@
             </div>
         </div>
         <div id="projects">
-            <div>
-                <img src="">
+            <div class="project_wrap">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev">
+                        <div class="material-icons">arrow_back</div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <div class="material-icons">arrow_forward</div>
+                    </div>
+                </div>
+                <div>
+                    <dd><span>프로젝트명 : </span><span>망고뮤직</span></dd>
+                    <dd><span>프로젝트명 : </span><span>망고뮤직</span></dd>
+                    <dd><span>프로젝트명 : </span><span>망고뮤직</span></dd>
+                    <dd><span>프로젝트명 : </span><span>망고뮤직</span></dd>
+                </div>
             </div>
         </div>
         <footer>
@@ -118,6 +142,25 @@
             상업용도가 아닌 포트폴리오 용도로 제작되었습니다.
         </footer>
     </body>
+    <script>
+        new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000
+            },
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next'
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -8,6 +8,14 @@ document.addEventListener('scroll', function () {
 
 function scrollToAubotMe(){
     var location = document.querySelector('#info').offsetTop;
+    var height = document.querySelector('header').offsetHeight;
     console.log(location);
-    window.scrollTo({top:location, behavior:'smooth'});
+    window.scrollTo({top:location-height, behavior:'smooth'});
+}
+
+function scrollToSkills(){
+    var location = document.querySelector('#skills').offsetTop;
+    var height = document.querySelector('header').offsetHeight;
+    console.log(location);
+    window.scrollTo({top:location-height, behavior:'smooth'});
 }
